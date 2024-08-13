@@ -18,12 +18,64 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.fade-in {
+  animation: 2s linear fade-in;
+}
+
+.fade-up-2 {
+  animation: 2s linear fade-up;
+}
+
+.fade-down-1 {
+  animation: 1s linear fade-down;
+}
+
+.fade-down-2 {
+  animation: 2s linear fade-down;
+}
+
+.fade-down-3 {
+  animation: 3s linear fade-down;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @layer utilities {
