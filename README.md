@@ -35,13 +35,12 @@ This Next.js application is a robust e-commerce platform specifically designed f
 ### Project Structure
 
 ```
-gaming-pc-store/
+pc-ecommerce/
 ├── public/
-├── src/
+├── app/
 │   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── utils/
+│   ├── rigs/
+│   ├── types/
 │   └── store/
 ├── next.config.js
 ├── package.json
